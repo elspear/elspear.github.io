@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Profile</title>
 
-
-    </head>
-    <body>
-        <p>hello github</p>
-    </body>
-
-
-
-
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emma's Portfolio</title>
+  <link rel="stylesheet" href="">
+  <!-- this is a comment -->
+</head>
 </html>
+
+<header>
+    <img src="./images/logo.png" alt="Emma's Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<body>
+    <main>
+        <container class="container">
+            <!-- Group About Me and Skills sections -->
+            <div class="about-skills-container">
+                <section id="about">
+                    <h1>About Me</h1>
+                    <p>Write bio here</p>
+                </section>
+
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <p>html, css, etc (icons)</p>
+                </section>
+            </div>
+
+            <!-- Projects section styled similarly -->
+            <div class="about-skills-container">
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <p>placeholders, coming soon</p>
+                </section>
+            </div>
+        </container>
+
+        <container class="container">
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <form action="#" method="POST" class="contact-form">
+                    <fieldset>
+                        <legend>Contact Me</legend>
+                        <label for="name">Name:</label>
+                        <input name="name" type="text" id="name" class="feedback-input" placeholder="Your Name" required />
+                    </fieldset>
+
+                    <label for="email">Email:</label>
+                    <input name="email" type="email" id="email" class="feedback-input" placeholder="Your Email" required />
+
+                    <label for="text">Message:</label>
+                    <textarea name="text" id="text" class="feedback-input" placeholder="Your Message" rows="5" required></textarea>
+
+                    <input type="submit" value="Send Message" class="submit-button" />
+                </form>
+            </section>
+        </container>
+    </main>
+</body>
