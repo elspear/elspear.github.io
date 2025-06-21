@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --brand: #4203ee;
+  --brand-alt: #E26941;
+  --base-lighter: #b2b0f3;
+  --base-mid: #564e9c;
+  --base-dark: git #3e0681;
+  --base-darker: #5858f3;
+  --base-darkest: #0d2352;
+  --font-default: 'Roboto', sans-serif;
+/*  inherited colors  */
+--text: var(--base-dark);
+} 
+
+/* ADD CSS RESET AND FIX ROOT WITH CSS VARIABLES */
+/* header styling here */
+  header {
+    position: sticky; 
+    top: 0; /* sticks at viewport */
+    z-index: 1000; /* don't touch this, brings header to front of elements */
+    background-color: #fed2e2; 
+    box-shadow: 0 2px 4px rgba(223, 16, 16, 0.1); /* Optional: Add a subtle shadow */
+    padding: 10px 20px; 
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header .logo {
+    height: 40px;
+    width: auto;
+  }
+
+/* Nav styles */
+nav ul {
+    display: flex; 
+    gap: 20px; 
+    list-style: none; /* no bullet points */
+    align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+    flex: none; /*item stay same size */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: var(--text); 
+    font-size: 1rem; 
+    transition: color 0.3s ease; /* Add hover effect */
+}
+
+nav ul li a:hover {
+    color: var(--brand); /* Change color on hover */
+}
+
+/* General Section Styles */
+
+section {
+    padding: 200px 20px; 
+    margin: 20px 0; 
+    background-color: var(--base-lightest); 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+section h2 {
+    font-size: 2rem;
+    color: var(--base-dark);
+    margin-bottom: 20px;
+}
+
+/* About Me Section */
+.about-image {
+    width: 250px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 25%; /* Optional: Rounded corners */
+    margin-left: 20px; /* Add spacing between the image and text */
+    margin-bottom: 25px;
+}
+
+#about {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px; 
+}
+
+#about h1 {
+    text-align: left;
+    font-size: 3rem; 
+    margin-bottom: 30px;
+    margin-top: -150px; 
+    color: var(--base-dark); 
+}
+
+#about p {
+    text-align: left; 
+    font-size: 1rem;
+    color: var(--text); 
+    margin-top: 10px; 
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.skill img {
+    width: 100px;
+    height: auto;
+   
+    
+}
+
+.skill p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--base-dark);
+}
+
+#skills {
+    text-align: center; 
+    
+}
+
+#skills h2 {
+    font-size: 2rem; 
+    margin-bottom: 40px;
+    margin-top: -150px;
+}
+
+.skills-grid {
+    display: grid; /* grid layout for skills */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* dont touch - responsive grid */
+    gap: 20px; /* Add spacing between items */
+    justify-content: center; 
+}
+
+/* Projects Section */
+.projects-grid {
+    display: flex; 
+    flex-wrap: wrap; /* Allow items to wrap onto new rows */
+    gap: 20px; 
+    justify-content: space-between; 
+}
+
+.project {
+    flex: 0 1 calc(50% - 20px); /* items take up 50% of the row minus the gap */
+    box-sizing: border-box; 
+    padding: 20px;
+    background-color: var(--base-lighter);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: var(--base-dark);
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: var(--base-darker);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--base-mid);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: var(--base-dark);
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex: 0 1 100%; 
+    }
+}
+
+#projects {
+    text-align: center; 
+    padding: 20px; 
+}
+
+#projects h2 {
+    font-size: 2rem; 
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+
+/* More Projects Section */
+.more-projects {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.more-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--base-mid); 
+    color: #000000; 
+    text-decoration: none; 
+    border: 2px solid var(--base-mid); 
+    border-radius: 5px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /*  hover effect - dont touch!!*/
+}
+
+.more-link:hover {
+    background-color: var(--base-dark); 
+    border-color: var(--base-dark); 
+    color: #fff; 
+}
+
+

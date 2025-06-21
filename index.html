@@ -6,68 +6,97 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emma's Portfolio</title>
-  <link rel="stylesheet" href="">
-  <!-- this is a comment -->
+  <link rel="stylesheet" href="./style.css">
 </head>
-</html>
-
-<header>
-    <img src="./images/logo.png" alt="Emma's Logo" class="logo">
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+  
 
 
 <body>
+    <header>
+        <img src="images/logo.png" alt="Emma's Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <container class="container">
-            <!-- Group About Me and Skills sections -->
-            <div class="about-skills-container">
-                <section id="about">
-                    <h1>About Me</h1>
-                    <p>Write bio here</p>
-                </section>
-
-                <section id="skills">
-                    <h2>Skills</h2>
-                    <p>html, css, etc (icons)</p>
-                </section>
+        <!-- About Me Section -->
+        <section id="about">
+            <div>
+                <h1>Hi there!</h1>
+                <p>bio</p>
             </div>
+            <img src="images/profilepic.png" alt="Your Photo" class="about-image">
+        </section>
 
-            <!-- Projects section styled similarly -->
-            <div class="about-skills-container">
-                <section id="projects">
-                    <h2>Projects</h2>
-                    <p>placeholders, coming soon</p>
-                </section>
+        <!-- My Skills Section -->
+        <section id="skills">
+            <h2>My Skills (more coming soon)</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="images/html-iconv2.png" alt="HTML Icon">
+                
+                </div>
+                <div class="skill">
+                    <img src="images/css-iconv2.png" alt="CSS Icon">
+                    
+                </div>
+                <div class="skill">
+                    <img src="images/tux-iconv2.png" alt="Linux Penguin Icon">
+                </div>
+                <div class="skill">
+                    <img src="images/python-iconv2.png" alt="Python Icon">
+                </div>
+                
+                <!-- Add more skills as needed -->
             </div>
-        </container>
+        </section>
 
-        <container class="container">
-            <section id="contact">
-                <h2>Contact Me</h2>
-                <form action="#" method="POST" class="contact-form">
-                    <fieldset>
-                        <legend>Contact Me</legend>
-                        <label for="name">Name:</label>
-                        <input name="name" type="text" id="name" class="feedback-input" placeholder="Your Name" required />
-                    </fieldset>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Python Space Turtle</h3>
+                    <p>SheCodes one day workshop</p>
+                </div>
+                <div class="project">
+                    <h3>Wordle Clone</h3>
+                    <p>A Wordle clone that runs in the cli, using python</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>A brief description of your project.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+            <div class="more-projects">
+                <a href="./projects.html" class="more-link">More...</a>
+            </div>
+        </section>
 
-                    <label for="email">Email:</label>
-                    <input name="email" type="email" id="email" class="feedback-input" placeholder="Your Email" required />
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
 
-                    <label for="text">Message:</label>
-                    <textarea name="text" id="text" class="feedback-input" placeholder="Your Message" rows="5" required></textarea>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                    <input type="submit" value="Send Message" class="submit-button" />
-                </form>
-            </section>
-        </container>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </main>
 </body>
+</html>
+
+
