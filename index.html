@@ -7,13 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emma's Portfolio</title>
   <link rel="stylesheet" href="./style.css">
+  <style>
+    header {
+        position: sticky; 
+        top: 0; /* sticks at viewport */
+        z-index: 1000; /* brings header to front of elements */
+        background-color: var(--base-lighter); 
+        box-shadow: 0 2px 4px rgba(223, 16, 16, 0.1); /* Add a subtle shadow */
+        padding: 15px; /* Reduced vertical padding for thinner header */
+        display: flex; /* Use Flexbox for layout */
+        justify-content: space-between; /* Space items horizontally */
+        align-items: center; /* Align items vertically */
+        height: 20px; /* Fix the height of the header */
+    }
+
+    .logo {
+        width: 80px; /* Increase logo width */
+        height: auto; /* Maintain aspect ratio */
+    }
+  </style>
 </head>
   
 
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Emma's Logo" class="logo">
+        <img src="images/logo.png" alt=" the initials ES inbetween curly brackets" class="logo">
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -26,30 +45,45 @@
     <main>
         <!-- About Me Section -->
         <section id="about">
-            <div>
-                <h1>Hi there!</h1>
-                <p>bio</p>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <img src="images/profilepic.png" alt="Photo of Emma" class="about-image">
+                </div>
+                <div class="about-text">
+                    <h1>Hi there, I'm Emma</h1>
+                    <p>When I’m not writing code, you’ll probably find me reading (I'm at 115 books this year so far), painting, writing, or doing puzzles (crosswords, sudoku, worlde, connections, you name it).
+                         I also love going for long walks with my dog, Hugo. <br><br>
+
+                        My background is in pharmacy, where I've spent over a decade solving complex problems, managing dose administration aids for medically complex patients, and liaising with doctors and healthcare services. While I’ve valued the skills and experiences I’ve gained, I’m now ready to transition fully into tech - a field that offers the kind of challenge, creativity, and problem solving I genuinely enjoy.</p>
+                    
+                
+                        
+                </div>
             </div>
-            <img src="images/profilepic.png" alt="Your Photo" class="about-image">
         </section>
 
         <!-- My Skills Section -->
         <section id="skills">
-            <h2>My Skills (more coming soon)</h2>
+            <h2>My Skills </h2>
             <div class="skills-grid">
                 <div class="skill">
-                    <img src="images/html-iconv2.png" alt="HTML Icon">
+                    <img src="images/html.svg" alt="HTML Icon">
+                    <p>HTML</p>
                 
                 </div>
                 <div class="skill">
-                    <img src="images/css-iconv2.png" alt="CSS Icon">
+                    <img src="images/css.svg" alt="CSS Icon">
+                    <p>CSS</p>
                     
                 </div>
                 <div class="skill">
-                    <img src="images/tux-iconv2.png" alt="Linux Penguin Icon">
+                    <img src="images/linux.svg" alt="Linux Penguin Icon">
+                    <p>Linux</p>
+                 
                 </div>
                 <div class="skill">
-                    <img src="images/python-iconv2.png" alt="Python Icon">
+                    <img src="images/python.svg" alt="Python Icon">
+                    <p>Python</p>
                 </div>
                 
                 <!-- Add more skills as needed -->
@@ -61,16 +95,16 @@
             <h2>Projects</h2>
             <div class="projects-grid">
                 <div class="project">
-                    <h3>Python Space Turtle</h3>
-                    <p>SheCodes one day workshop</p>
+                    <h3><a href="./projects.html">Space Turtle Game</a></h3>
+                    <p>A fun python game I made at a SheCodes one day workshop</p>
                 </div>
                 <div class="project">
-                    <h3>Wordle Clone</h3>
-                    <p>A Wordle clone that runs in the cli, using python</p>
+                    <h3><a href="./projects.html">Wordle Clone</a></h3>
+                    <p>A Wordle clone that runs in the CLI</p>
                 </div>
                 <div class="project">
-                    <h3>Project 3</h3>
-                    <p>A brief description of your project.</p>
+                    <h3><a href="./projects.html">Portfolio Web Page</a></h3>
+                    <p>This site you're on.</p>
                 </div>
                 <!-- Add more projects as needed -->
             </div>
@@ -82,7 +116,7 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <form action="#" method="POST" class="contact-form">
+            <form action="https://formspree.io/f/mqabdrqb" method="POST" class="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
 
@@ -96,6 +130,9 @@
             </form>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2025 Emma Spear</p>
+    </footer>
 </body>
 </html>
 
