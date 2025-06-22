@@ -7,42 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emma's Portfolio</title>
   <link rel="stylesheet" href="./style.css">
-  <style>
-    header {
-        position: sticky; 
-        top: 0; 
-        z-index: 1000; /* do not touch!! brings header to front of elements */
-        background-color: var(--base-lighter); 
-        box-shadow: 0 2px 4px rgba(223, 16, 16, 0.1); /* Add a subtle shadow */
-        padding: 15px; 
-        display: flex; /* Use Flexbox for layout */
-        justify-content: space-between; 
-        align-items: center; /
-        height: 20px; 
-    }
-
-    .logo {
-        width: 80px;
-        height: auto;
-    }
-  </style>
+  
 </head>
   
-
-
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <header>
         <img src="images/logo.png" alt=" the initials ES inbetween curly brackets" class="logo">
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" aria-label="Navigate to About section">About</a></li>
+                <li><a href="./projects.html" aria-label="Navigate to Projects page">Projects</a></li>
+                <li><a href="#skills" aria-label="Navigate to Skills section">Skills</a></li>
+                <li><a href="#contact" aria-label="Navigate to Contact section">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="main-content">
         <!-- About Me Section -->
         <section id="about">
             <div class="about-content">

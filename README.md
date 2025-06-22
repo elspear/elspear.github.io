@@ -30,6 +30,35 @@ The Projects page is my second page, where I get to elaborate on the details of 
 I implemented hover links which I will show in the screenshots. I plan to implement some JavaScript when I begin to work on my Projects page. I made the header with nav links sticky so that it follows the page. 
 ​
 ### Screenshots
+### Wireframes
+![Wireframe](./wireframes/wireframe.png)
+![Wireframe](./wireframes/wireframe2.png)
+
+### Desktop Screenshots Homepage
+![Desktop One](./screenshots/desktopscreenshot1.png)
+![Desktop Two](./screenshots/desktopscreenshot2.png)
+![Desktop Three](./screenshots/desktopscreenshot3.png)
+![Desktop Four](./screenshots/desktopscreenshot4.png)
+
+### Desktop Screenshots Projects Page
+![Desktop Project](./screenshots/desktopscreenshotprojectpage.png)
+
+### Mobile Screenshots Homepage
+![Mobile One](./screenshots/mobile1.png)
+![Mobile Two](./screenshots/mobile2.png)
+![Mobile Three](./screenshots/mobile3.png)
+![Mobile Four](./screenshots/mobile4.png)
+
+### Mobile Screenshots Projects Page
+![Mobile Project One](./screenshots/mobileprojects1.png)
+![Mobile Project Two](./screenshots/mobileprojects2.png)
+
+### Desktop Screenshots Hover Links
+![Desktop Hover One](./screenshots/Hoverdesktop1.png)
+![Desktop Hover Two](./screenshots/Hoverdesktop2.png)
+![Desktop Hover Three](./screenshots/Hoverdesktop3.png)
+
+
 > Please include the following:
 > - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
 > - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.  
