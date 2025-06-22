@@ -21,6 +21,7 @@ My profile picture is located on the first section of my site, the "about me". M
 - [x] Deployed on GitHub pages.
 - [x] Implements responsive design principles.
 - [x] Uses semantic HTML.
+
 The Projects page is my second page, where I get to elaborate on the details of my projects and inclue screenshots. It has the same header as my main page, instead with a home link in place of projects link. The footer is the same as well. My GitHub repository shows I have followed best practice to version track my updates and deployments. I also added a file into my repository from GitHub, so that I could try out pulling and syncing to my local repository. I have used semantic html and media queries so my page is responsive and works for all screen sizes. I have made sure that image aspect ratios aren't changed when resizing, and used rem for font measurements. I have also used Aria labels for accessibility.
 
 ### Bonus (optional)
