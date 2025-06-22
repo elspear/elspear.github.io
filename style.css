@@ -5,149 +5,143 @@
     --brand-alt: #E26941;
     --base-lighter: #b2b0f3;
     --base-mid: #4133be;
-    --base-dark: #f7f1ff; /* Fixed typo: removed 'git' */
+    --base-dark: #f7f1ff;
     --base-darker: #111185;
     --base-darkest: #ffffff;
-    --font-default: 'Roboto', sans-serif;
+    --font-default: 'Roboto', Arial, sans-serif; 
     --text: var(--base-darker);
 }
 
 body {
-    font-family: var(--font-default); /* Use the font defined in :root */
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
-    background-color: var(--base-darkest); /* Set background color */
-    color: var(--text); /* Set text color */
+    font-family: var(--font-default); 
+    margin: 0;
+    padding: 0; 
+    background-color: var(--base-darkest); 
+    color: var(--text); 
 }
 
 header {
     position: sticky; 
-    top: 0; /* sticks at viewport */
-    z-index: 1000; /* brings header to front of elements */
+    top: 0; /* sticks at viewport - don't touch */
+    z-index: 1000; /* brings header to front of elements - once again, don't touch*/
     background-color: var(--base-lighter); 
-    box-shadow: 0 2px 4px rgba(223, 16, 16, 0.1); /* Add a subtle shadow */
-    padding: 15px; /* Reduced vertical padding for thinner header */
-    display: flex; /* Use Flexbox for layout */
-    justify-content: space-between; /* Space items horizontally */
-    align-items: center; /* Align items vertically */
-    border-radius: 0px;
+    padding: 10px; /* reduce for thinner header */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
     margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 .logo {
-    width: 100px; /* Set logo width to make it smaller */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: auto; /* Push the logo to the left */
+    width: 100px; 
+    height: auto; /* keep this for aspect ratio */
+    margin-right: auto; /* puts logo to left*/
 }
 
 nav ul {
     display: flex; 
-    gap: 30px; /* Add spacing between navigation links */
-    list-style: none; /* Remove bullet points */
-    margin: 0; /* Remove vertical margins */
-    padding: 0; /* Remove padding */
-    align-items: center; /* Align items vertically */
-    justify-content: flex-end; /* Align navigation links to the right */
+    gap: 30px; /* spacing between nav links */
+    list-style: none; /* gets rid of bullet points */
+    align-items: center; 
+    justify-content: flex-end; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none; /* take away underline from links */
     color: white; 
     font-size: 1rem; /* Ensure consistent font size */
-    transition: color 0.3s ease; /* Add hover effect */
+    transition: color 0.3s ease; /* hover effect */
 }
 
 nav ul li a:hover {
-    color: var(--base-darker); /* Change color on hover */
+    color: var(--base-darker); /* change color on hover */
 }
 
 section {
-    min-height: 500px; /* Ensure consistent height for all sections */
-    padding: 50px 20px; /* Add spacing inside sections */
-    margin: 20px 10px; /* Add spacing between sections */
-    border-radius: 10px; /* Rounded corners */
-    background-color: var(--base-dark); /* Section background color */
-    text-align: center; /* Center-align text */
-    border: 1px solid transparent; /* Prevent margin collapse */
+    min-height: 500px; 
+    padding: 50px 20px; 
+    margin: 20px 10px; 
+    border-radius: 10px; /* rounds corners */
+    background-color: var(--base-dark); 
+    text-align: center; 
+    border: 1px solid transparent; 
 }
 
 section h2 {
-    font-size: 2rem; /* Adjust heading size */
-    margin-bottom: 20px; /* Add spacing below the heading */
-    color: var(--base-darker); /* Use your text color variable */
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: var(--base-darker); 
 }
 
 #about {
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px; 
 }
 
 .about-content {
     display: flex; 
-    flex-direction: column;/* Use Flexbox for layout */
-    flex-wrap: wrap; /* Prevent items from wrapping onto new rows */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space items evenly */
-    gap: 20px; /* Add spacing between the image and text */
+    flex-direction: column;
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
 }
 
 .about-image-container {
-    flex: 0 0 auto; /* Prevent the image container from shrinking or growing */
+    flex: 0 0 auto; /* shrink/grow DO NOT TOUCH */
 }
 
 .about-image {
-    width: 350px; /* Set image width */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Rounded corners */
+    width: 350px; 
+    height: auto; /* aspect ratio!!! */
+    border-radius: 50%; 
 }
 
 .about-text {
-    flex: 1; /* Allow the text container to take up remaining space */
-    max-width: 600px; /* Limit the width of the text container */
+    flex: 1; /* flex grow do not touch */
+    max-width: 600px; 
 }
 
 .about-text h1 {
-    font-size: 3rem; /* Adjust heading size */
-    margin-bottom: 20px; /* Add spacing below the heading */
-    color: var(--base-darker); /* Use your text color variable */
+    font-size: 3rem; 
+    margin-bottom: 20px; 
+    color: var(--base-darker); 
 }
 
 .about-text p {
-    font-size: 1rem; /* Adjust paragraph size */
-    color: var(--text); /* Use your text color variable */
-    margin: 10px 0; /* Add spacing above and below the paragraph */
+    font-size: 1rem; 
+    color: var(--text); 
+    margin: 10px 0; 
 }
 
 .skills-grid {
-    display: flex; /* Use Flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap onto new rows */
-    justify-content: center; /* Center items horizontally */
-    gap: 20px; /* Add spacing between items */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; /* spacing */
 }
 
 .skill {
-    display: flex; /* Use Flexbox for each skill item */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align the image and text */
-    text-align: center; /* Center-align the text */
-    flex: 0 1 100px; /* Prevent growth, allow shrinking, set base size */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    flex: 0 1 100px; 
 }
 
 .skill img {
-    width: 70%; /* Make icons responsive within their container */
-    height: auto; /* Maintain aspect ratio */
+    width: 70%; 
+    height: auto; /*aspect ratio */
 }
 
 .skill p {
-    margin-top: 10px; /* Add spacing above the text */
-    font-size: 1rem; /* Adjust font size */
-    color: var(--text); /* Use your text color variable */
+    margin-top: 10px; 
+    font-size: 1rem; 
+    color: var(--text); 
 }
 
 #skills {
-    padding: 50px 20px; /* Adjust vertical and horizontal padding */
-    text-align: center; /* Center-align text */
+    padding: 50px 20px; 
+    text-align: center; 
 }
 
 #skills h2 {
@@ -158,13 +152,13 @@ section h2 {
 
 .projects-grid {
     display: flex; 
-    flex-wrap: wrap; /* Allow items to wrap onto new rows */
-    gap: 20px; /* Add spacing between items */
-    justify-content: center; /* Center project cards */
+    flex-wrap: wrap; /*  wrap onto new rows */
+    gap: 20px; 
+    justify-content: center; 
 }
 
 .project {
-    flex: 0 1 calc(50% - 20px); /* Items take up 50% of the row minus the gap */
+    flex: 0 1 calc(50% - 20px); /* items take up 50% of the row minus the gap - leave be!!! */
     box-sizing: border-box; 
     padding: 20px;
     background-color: var(--base-lighter);
@@ -227,7 +221,7 @@ section h2 {
     border: 0px solid var(--base-mid); 
     border-radius: 5px; 
     font-weight: bold;
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /*  hover effect - do not touch*/
 }
 
 .more-link:hover {
@@ -237,98 +231,149 @@ section h2 {
 }
 
 #about, #skills, #projects {
-    min-height: 500px; /* Ensure consistent height for these sections */
+    min-height: 500px; 
 }
 
 #contact {
-    padding: 100px 20px; /* Add spacing inside the contact section */
-    margin: 20px 10px; /* Add spacing between sections */
-    text-align: center; /* Center-align text */
+    padding: 100px 20px; 
+    margin: 20px 10px; 
+    text-align: center; 
     border-radius: 10px; 
     
 }
 
 #contact h2 {
-    font-size: 2rem; /* Adjust heading size */
-    margin-bottom: 20px; /* Add spacing below the heading */
-    color: var(--base-darker); /* Use your text color variable */
+    font-size: 2rem; 
+    margin-bottom: 20px; 
+    color: var(--base-darker); 
 }
 
 .contact-form {
-    max-width: 400px; /* Limit the width of the form */
-    margin: 0 auto; /* Center the form */
-    text-align: left; /* Align form text to the left */
-    font-family: var(--font-default); /* Use the custom font defined in :root */
+    max-width: 400px; 
+    margin: 0 auto;
+    text-align: left; 
+    font-family: var(--font-default); 
 }
 
 .contact-form label {
-    display: block; /* Ensure labels are on their own line */
-    margin-bottom: 10px; /* Add spacing below labels */
-    font-size: 1rem; /* Adjust label font size */
-    color: var(--base-darker); /* Use your text color variable */
-    font-family: var(--font-default); /* Use the custom font */
+    display: block; 
+    margin-bottom: 10px; 
+    font-size: 1rem; 
+    color: var(--base-darker); 
+    font-family: var(--font-default);
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%; /* Make inputs and textarea take up full width */
-    padding: 10px; /* Add padding inside inputs */
-    margin-bottom: 20px; /* Add spacing below inputs */
-    border: 1px solid var(--base-mid); /* Add border to inputs */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1rem; /* Adjust font size */
-    font-family: var(--font-default); /* Use the custom font */
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid var(--base-mid); 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    font-family: var(--font-default); 
 }
 
 .contact-form button {
-    display: block; /* Change to block-level element */
-    margin: 0 auto; /* Center the button horizontally */
+    display: block; 
+    margin: 0 auto; 
     padding: 10px 20px;
-    background-color: var(--brand); /* Button background color */
-    color: #fff; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 1rem; /* Adjust font size */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-    font-family: var(--font-default); /* Use the custom font */
+    background-color: var(--brand); 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-family: var(--font-default); 
 }
 
 contact-form button:hover {
-    background-color: #e77cc2; /* Change button color on hover */
+    background-color: #e77cc2; 
 }
 
 footer {
-    background-color: var(--base-lighter); /* Match the header background color */
-    color: var(--base-darkest); /* Footer text color */
-    text-align: center; /* Center-align text */
-    padding: 20px; /* Add padding inside the footer */
-    margin-top: 1px; /* Add spacing above the footer */
-    border-top: 2px solid var(--base-dark); /* Optional: Add a border at the top */
+    background-color: var(--base-lighter); 
+    padding: 20px; 
+    text-align: center; 
 }
 
-footer p {
-    margin: 0; /* Remove default margin */
-    font-size: 1rem; /* Adjust font size */
+.footer-content {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
 }
 
-footer ul {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 10px 0 0; /* Add spacing above the list */
-    display: flex; /* Use Flexbox for layout */
-    justify-content: center; /* Center-align list items */
-    gap: 20px; /* Add spacing between items */
+.footer-content p {
+    margin: 0; 
+    font-size: 1rem;
+    color: var(--base-darker); 
 }
 
-footer ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: var(--base-darkest); /* Footer link color */
-    font-size: 0.9rem; /* Adjust font size */
+.footer-logo {
+    width: 24px; 
+    height: auto; 
+    cursor: pointer; 
 }
 
-footer ul li a:hover {
-    color: var(--brand); /* Change color on hover */
+/* media query for screens smaller than 768px  */
+@media (max-width: 768px) {
+    
+
+    .about-content {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    
+
+    .project {
+        flex: 0 1 100%; 
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%; 
+        padding: 10px; 
+    }
+
+}
+
+/* media query for screens smaller than 480px  */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem; 
+    }
+
+    .about-image {
+        width: 250px; 
+    }
+
+    .skills-grid {
+        gap: 10px; 
+    }
+
+    .project h3 {
+        font-size: 1.2rem; 
+    }
+
+    .project p {
+        font-size: 0.9rem; 
+    }
+
+    .contact-form button {
+        padding: 8px 15px; 
+        font-size: 0.9rem; 
+    }
+
+    footer {
+        padding: 15px; 
+    }
+
+    .footer-logo {
+        width: 20px; 
+    }
 }
 
 
