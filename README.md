@@ -59,10 +59,3 @@ I implemented hover links which I will show in the screenshots. I plan to implem
 ![Desktop Hover Two](./screenshots/Hoverdesktop2.png)
 ![Desktop Hover Three](./screenshots/Hoverdesktop3.png)
 
-
-> Please include the following:
-> - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
-> - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.  
-> 
-> You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
-
