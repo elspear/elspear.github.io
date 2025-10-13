@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emma's Portfolio</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <!-- 'skip to content' link for screen readers -->
+        <a href="#main-content" class="skip-link">Skip to content</a>
+
+        <header class="site-header">
+            <div class="container">
+                <a href="./index.html" aria-label="Go to homepage">
+                     <img src="./images/logo.svg" alt="Logo reading Emma Spear" class="logo">
+                </a>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="./index.html" aria-label="Home">Home</a></li>
+                        <li><a href="./about.html" aria-label="About me">About</a></li>
+                        <li><a href="./projects.html" aria-label="My projects">Projects</a></li>
+                        <li><a href="#" aria-label="Contact me">Contact</a></li>
+                    </ul>
+                </nav>   
+            </div>
+        </header>
+
+        <main id="main-content">
+
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <!-- Left side: Image-->
+                         <div class="hero-image">
+                            <img src="./images/profile-pic.svg" alt="Photo of Emma" class="profile-image">
+                         </div>
+
+                         <!-- Right side: Text -->
+                          <div class="hero-text">
+                            <h1>Welcome to my portfolio</h1>
+                            <p>
+                                <br>
+                                I'm Emma, an aspiring programmer taking part in the She
+                                Codes Plus Program.
+                                <br>
+                                <br>
+                                When I'm not crying over broken code, I enjoy spending
+                                time with my dog, reading, gaming, and building mechanical
+                                keyboards.
+                            </p>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <nav aria-label="Social Links">
+                    <ul class="social-links">
+                        <li>
+                           <a href="https://github.com/elspear" target="_blank"><img src="./images/github-logo.svg" alt="GitHub Profile"></a> 
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/emma-spear-3b9378315/" target="_blank"><img src="./images/linkedin(1).svg" alt="LinkedIn Profile"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+
+        <!-- Contact Modal -->
+        <div class="modal" id="contactModal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Let's Connect!</h2>
+                <div class="contact-links">
+                    <a href="https://github.com/elspear" target="_blank" class="contact-link">
+                        <img src="./images/github-logo.svg" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/emma-spear-3b9378315/" target="_blank" class="contact-link">
+                        <img src="./images/linkedin(1).svg" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="contact-link">
+                        <img src="./images/email-icon.svg" alt="Email">
+                        <span>Email Me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
