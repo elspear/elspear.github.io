@@ -1,39 +1,34 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Get DOM elements
-    const modal = document.getElementById('contactModal');
-    const contactLinks = document.querySelectorAll('a[href*="contact"]');
-    const closeButton = document.querySelector('.close-button');
-
-    // Open modal when contact link is clicked
-    contactLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
+// Handle contact modal interactions
+document.addEventListener('click', function(e) {
+    // If it's a contact link
+    if (e.target.matches('a[href="#"][aria-label="Contact me"], a[aria-label="Contact me"]')) {
+        e.preventDefault();
+        const modal = document.getElementById('contactModal');
+        if (modal) {
             modal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        });
-    });
-
-    // Close modal when X is clicked
-    closeButton.addEventListener('click', function() {
-        closeModal();
-    });
-
-    // Close modal when clicking outside
-    window.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            closeModal();
+            document.body.style.overflow = 'hidden';
         }
-    });
+    }
+});
 
-    // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && modal.style.display === 'block') {
-            closeModal();
-        }
-    });
+// Close modal when clicking close button or outside
+document.addEventListener('click', function(e) {
+    const modal = document.getElementById('contactModal');
+    if (!modal) return;
 
-    function closeModal() {
+    if (e.target.matches('.close-button') || e.target === modal) {
         modal.style.display = 'none';
-        document.body.style.overflow = ''; // Restore scrolling
+        document.body.style.overflow = '';
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('contactModal');
+        if (modal && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
     }
 });
