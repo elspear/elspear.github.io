@@ -23,8 +23,8 @@
 }
 
 .nav-logo img {
-    width: 145px;
-    height: auto;        
+    height: 60px;
+    width: auto;        
     object-fit: fill;     
     padding: 0;
 }
