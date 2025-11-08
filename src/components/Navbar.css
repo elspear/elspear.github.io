@@ -1,49 +1,58 @@
 .nav-container {
-    width: 100%;
-    padding: 0.5rem;
-    background-color: paleturquoise;
-    border-bottom: 1px solid black;
-}
-
-.nav-wrapper {
-    max-width: 100%;
-    margin: 0 auto;
+    width: 1200px;
+    max-width: calc(100% - 2rem);
+    padding: 0.8rem 2rem;
+    background-color: #fce9f3;
+    border: 3px solid black; 
+    box-shadow: 4px 5px 0px black;
+    border-radius: 8px;  
+    margin: 1rem auto;
     display: flex;
     justify-content: space-between;
-    align-items:center;
-    gap: 8rem;
-    border: 0px solid black;
+    align-items: center;
 }
 
 /* Logo section */
 .nav-logo {
-    flex: 1;
-    border: 0px dashed black;
+    flex: 0 1 auto;    /* Changed to prevent stretching */
     display: flex;
-    justify-content:center;
+    border: 0px dashed black;
     align-items: center;
+    min-height: 45px;    
+    margin-right: 2rem;  /* Add spacing between logo and links */
 }
 
 .nav-logo img {
-    height: 70px;
-    width: auto;
-    border: 0px solid black;
+    width: 145px;
+    height: auto;        
+    object-fit: fill;     
+    padding: 0;
+}
+
+/* Links wrapper */
+.links-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Changed from space-between */
+    margin-left: 2rem;
 }
 
 /* Links section */
 .nav-links {
-    flex: 2;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    border: 0px dashed black;
-    padding: 10px 20px;
+    gap: 3rem;
+    padding: 0 20px;
+    margin: 0 auto;  /* Add this to help with centering */
 }
 
 .nav-links a {
     position: relative;
     text-decoration: none;
     color: black;
+    font-size: 20px;
+    
 }
 
 .nav-links a:hover {
@@ -83,11 +92,9 @@
 
 /* Button section */
 .nav-button {
-    flex: 1;
     display: flex;
     justify-content: flex-end;
-    padding: 10px 40px;
-    border: 0px dashed black;
+    align-items: center;
 }
 
 .contact-btn {
@@ -96,7 +103,7 @@
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: 4px 5px 0px black;
-    background-color: transparent;
+    background-color: #fc64ab;
     cursor: pointer;
     font-size: 1.2rem;
 }
@@ -109,19 +116,95 @@
 
 
 
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.hamburger {
+    width: 24px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
-    .nav-wrapper {
+    .nav-container {
+        padding: 0.8rem 1rem;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        z-index: 100;
+    }
+
+    .links-wrapper {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        background-color: #fce9f3;
         flex-direction: column;
-        gap: 1rem;
+        justify-content: center;
+        transition: right 0.3s ease;
+        z-index: 90;
+    }
+
+    .links-wrapper.open {
+        right: 0;
     }
 
     .nav-links {
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
     }
 
     .nav-button {
         justify-content: center;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-container {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .nav-links {
+        gap: 2rem;
     }
 }
