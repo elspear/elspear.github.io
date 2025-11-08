@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import NavBar from './components/Navbar';
 import HomePage from "./pages/HomePage";  
+import ProjectsPage from "./pages/ProjectsPage";
 
 // Layout component keeps navigation and structure consistent
 
@@ -21,7 +22,8 @@ const router = createBrowserRouter([  // Fixed: createBrowserRouter takes an arr
     path: "/",
     element: <Layout />,       // Layout wraps all routes
     children: [
-      { path: "/", element: <HomePage /> },  // Changed: Home to HomePage
+      { path: "/", element: <HomePage /> }, 
+      { path: "/projects", element: <ProjectsPage />},
     ],
   },
 ]);
