@@ -1,0 +1,124 @@
+.nav-container {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: paleturquoise;
+    border-bottom: 1px solid black;
+}
+
+.nav-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 8rem;
+    border: 0px solid black;
+}
+
+/* Logo section */
+.nav-logo {
+    flex: 1;
+    border: 0px dashed black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 70px;
+    width: auto;
+    border: 0px solid black;
+}
+
+/* Links section */
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border: 0px dashed black;
+    padding: 10px 20px;
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    transition: all 0.3s ease; /* Changed from color to all */
+    display: inline-block; /* Add this to make transform work */
+}
+
+.nav-links a:hover {
+    transform: scale(1.1); /* Add this for size increase */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Add this after your existing nav-links styles */
+.nav-links a.active::after {
+    width: 100%;  /* Makes the underline visible for active page */
+}
+
+.nav-links a.active {
+    font-weight: 500;  /* Optional: makes the active link slightly bolder */
+}
+    
+
+/* Button section */
+.nav-button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 40px;
+    border: 0px dashed black;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 4px 5px 0px black;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.contact-btn:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    background-color: none;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        justify-content: center;
+    }
+}
