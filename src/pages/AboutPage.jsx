@@ -29,7 +29,7 @@ function AboutPage() {
             <section className="about-journey">
                 <h2>My Journey</h2>
                 <p> I’ve spent over a decade working in pharmacy as a dispensary manager responsible
-                    or keeping a busy, high-pressure environment running smoothly.</p>
+                    for keeping a busy, high-pressure environment running smoothly.</p>
                 <p> Over those years, I’ve learned
                     how to stay calm with complex workloads, solve problems quickly, and pay attention to the tiny
                     details that really matter.</p>
@@ -77,8 +77,8 @@ function AboutPage() {
             {/* Interests/Hobbies Section */}
             <section className="interests-section">
                 <h2>Beyond Coding</h2>
-                <p>I'm avid reader - at 135 out of my 200 book goal for the year.</p>
-                <p>I also enjoy painting, knitting, crocheting, building miniatures, playing the clarinet and gaming (which I recently built a custom pc for).</p>
+                <p>I'm an avid reader - at 135 out of my 200 book goal for the year.</p>
+                <p>I also enjoy painting, knitting, crocheting, building miniatures, playing the clarinet and gaming (which I recently built a custom PC for).</p>
                 <p>I enjoy learning about pharmacology, psychology, philosophy, and of course - coding.</p>
                 <p>Apparently I'm what is referred to as a "serial hobbyist".</p>
             </section> 

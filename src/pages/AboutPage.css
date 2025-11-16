@@ -54,6 +54,7 @@
     border-radius: 15px;
     padding: 1.5rem 2rem;
     margin-top: 5rem;
+    margin-bottom: 2rem;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -73,10 +74,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-journey:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-}
 
 .about-journey h2 {
     padding-bottom: 10px;
@@ -144,10 +141,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.interests-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-}
+
 
 .interests-section h2 {
     padding-bottom: 10px;
@@ -159,18 +153,82 @@
 
 /* Add responsive design */
 @media (max-width: 768px) {
+    .about-container {
+        padding: 1rem;
+    }
+    
+    .about-hero {
+        max-width: 90%;
+        margin: 2rem auto;
+        padding: 1.5rem 1rem;
+    }
+    
     .about-hero h1 {
         font-size: 2rem;
     }
     
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .star-svg {
+        width: 60px;
+        height: 60px;
+        top: -25px;
+        left: -25px;
+    }
+    
+    .star-svg-right {
+        width: 60px;
+        height: 60px;
+        bottom: -25px;
+        right: -30px;
+    }
+    
+    .about-content-container {
+        display: block; /* Switch from grid to block layout */
+        padding: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-journey, .interests-section, .skills-section {
+        padding: 1.5rem 1rem;
+        margin-bottom: 2rem;
+    }
+    
     .skills-grid {
-        grid-template-columns: 1fr; /* Stack vertically on mobile */
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .skill-category {
+        padding: 1rem;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.2rem;
     }
 }
 
 /* Add tablet breakpoint for better responsive behavior */
 @media (max-width: 1024px) {
+    .about-hero {
+        max-width: 75%;
+    }
+    
+    .about-content-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "journey"
+            "interests" 
+            "skills";
+        gap: 1rem;
+        padding: 2rem 1.5rem;
+    }
+    
     .skills-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        grid-template-columns: repeat(2, 1fr);
     }
 }

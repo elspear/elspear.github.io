@@ -1,5 +1,4 @@
 import "./HomePage.css";
-import image from '../assets/pic2.svg'
 
 function HomePage() {
   return (

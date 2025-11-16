@@ -1,9 +1,4 @@
-body{
-  background: #FBD4C5;
-}
-
 .home-container {
-  min-height: 100vh;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -11,6 +6,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom: 0;
 }
 
 .hero-container {
@@ -22,7 +18,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  min-height: 85vh;
+  min-height: 70vh;
 }
 
 .home-title {
@@ -84,7 +80,7 @@ body{
 }
 
 .home-text h2 {
-  color: #89295b;
+  color: #000000;
   margin-bottom: 1.5rem;
   font-size: 2.2rem;
   font-family: 'Work Sans', sans-serif;
@@ -144,74 +140,7 @@ body{
   }
 }
 
-/* Currently Working On Section */
-.currently-working-container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-  background: linear-gradient(135deg, #f0b7d1 0%, #fce9f3 100%);
-  border: 3px solid #fc64ab;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 3rem;
-}
 
-.currently-working-container h2 {
-  color: #fc64ab;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.current-projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.current-project {
-  background: rgba(255, 255, 255, 0.3);
-  border: 2px solid rgba(252, 100, 171, 0.3);
-  border-radius: 12px;
-  padding: 1.5rem;
-  backdrop-filter: blur(5px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.current-project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(252, 100, 171, 0.2);
-}
-
-.current-project h3 {
-  color: #89295b;
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.current-project p {
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tech-tag {
-  background-color: #fc64ab;
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.875rem;
-  font-weight: 500;
-}
 
 /* Responsive design */
 @media (max-width: 768px) {
