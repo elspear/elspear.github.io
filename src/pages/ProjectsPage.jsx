@@ -8,8 +8,8 @@ function ProjectsPage() {
             description: "My personal portfolio website built with React showcasing my development projects and skills",
             image: "/project-portfolio.png",
             technologies: ["React", "CSS", "JavaScript"],
-            github: "https://github.com/yourusername/react-portfolio",
-            demo: "https://your-portfolio-link.com"
+            github: "https://github.com/elspear/elspear.github.io",
+            demo: "https://elspear.github.io/"
         },
         {
             title: "PokePledge",
@@ -32,8 +32,7 @@ function ProjectsPage() {
             description: "A terminal Wordle themed game written with Python, using Rich for beautiful formatting",
             video: "/project-wyrdl.mov",
             technologies: ["Python", "Rich"],
-            github: "https://github.com/elspear/wyrdl-game",
-            demo: "https://github.com/elspear/wyrdl-game"
+            github: "https://github.com/elspear/wyrdl",
         },
     ];
 

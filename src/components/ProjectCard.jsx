@@ -28,7 +28,9 @@ function ProjectCard({ title, description, image, video, technologies, github, d
                     {description}
                 </p>
                 <div className="project-links">
-                    <a href={demo} target="_blank" rel="noopener noreferrer" className="button">View Project</a>
+                    {demo && (
+                        <a href={demo} target="_blank" rel="noopener noreferrer" className="button">View Project</a>
+                    )}
                     <a href={github} target="_blank" rel="noopener noreferrer" className="button button-outline">View Code</a>
                 </div>
             </div>
