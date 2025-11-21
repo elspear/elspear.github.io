@@ -32,7 +32,7 @@ function ProjectsPage() {
             description: "A terminal Wordle themed game written with Python, using Rich for beautiful formatting",
             video: "/project-wyrdl.mov",
             technologies: ["Python", "Rich"],
-            github: "https://github.com/elspear/wyrdl",
+            github: "https://github.com/elspear/wyrdle",
         },
     ];
 
