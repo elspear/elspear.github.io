@@ -46,7 +46,8 @@ function ProjectsPage() {
                     <div className="current-project">
                         <h3>Save Point - A Sprint Retrospective Board</h3>
                         <p>Collaborative digital platform for agile teams to conduct real-time retrospectives. Features user authentication, live voting, and sprint feedback management for a client project.</p>
-                        <p>wip: <a href="https://github.com/elspear/savepoint-demo" target="_blank" rel="noopener noreferrer">backend code</a></p>
+                        <p>wip: <a href="https://github.com/SheCodesAus/purrgrammers_backend" target="_blank" rel="noopener noreferrer">backend code</a></p>
+                        <p>wip: <a href="https://github.com/SheCodesAus/purrgrammers_frontend" target="_blank" rel="noopener noreferrer">frontend code</a></p>
                         <div className="tech-tags">
                             <span className="tech-tag">Django</span>
                             <span className="tech-tag">Python</span>
