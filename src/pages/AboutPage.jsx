@@ -28,18 +28,15 @@ function AboutPage() {
             {/* Background/Journey Section */}
             <section className="about-journey">
                 <h2>My Journey</h2>
-                <p> I’ve spent over a decade working in pharmacy as a dispensary manager responsible
-                    for keeping a busy, high-pressure environment running smoothly.</p>
-                <p> Over those years, I’ve learned
-                    how to stay calm with complex workloads, solve problems quickly, and pay attention to the tiny
-                    details that really matter.</p>
-                <p> I’ve always been curious about programming, and when a coworker introduced me to She Codes, I finally
-                    decided to make the jump — and it’s genuinely been one of the best decisions I’ve made.</p>
-                <p>Tech gives me
-                    endless opportunities to learn, create, and improve the way things work.
-                    As I continue growing my skills, I’m eager to move into a software development role where I can bring
-                    the strengths I’ve built in pharmacy: adaptability, precision, and the ability to troubleshoot and
-                    think creatively under pressure.</p>
+                <p> I have spent more than a decade working in pharmacy as a dispensary manager, responsible for keeping a fast-paced, highly regulated environment running smoothly.</p>
+                <p> Those years taught me how to stay calm under pressure, navigate complex systems, and pay attention to the details that genuinely matter.</p>
+                <p> I’d always been curious about programming, and when a coworker introduced me to She Codes, I finally decided to make the jump. It turned out to be one of the best decisions I’ve ever made.
+</p>
+                <p>Through She Codes Plus, I’ve stepped into full stack development — building real applications with Python, Django REST Framework, React,
+                     HTML, and CSS. I love the combination of logic, creativity, and problem-solving that tech gives me. Connecting backend and frontend systems 
+                     feels especially rewarding; understanding both sides helps me write cleaner, more efficient, more thoughtful code.</p>
+
+                <p>As I continue growing, I’m excited to move into a software development role where I can bring everything I’ve learned from both worlds: precision, adaptability, systems thinking, and a genuine passion for creating tools that make life a little easier for the people using them.</p>
             </section>
 
             {/* Skills Section */}
@@ -58,12 +55,12 @@ function AboutPage() {
                         <h3>Backend</h3>
                         <ul>
                             <li>Python</li>
-                            <li>Django</li>
+                            <li>Django REST Framework</li>
                             
                         </ul>
                     </div>
                     <div className="skill-category">
-                        <h3>Next to Learn</h3>
+                        <h3>Currently Learning</h3>
                         <ul>
                             <li>TypeScript</li>
                             <li>Node.js</li>
@@ -77,10 +74,11 @@ function AboutPage() {
             {/* Interests/Hobbies Section */}
             <section className="interests-section">
                 <h2>Beyond Coding</h2>
-                <p>I'm an avid reader - at 135 out of my 200 book goal for the year.</p>
-                <p>I also enjoy painting, knitting, crocheting, building miniatures, playing the clarinet and gaming (which I recently built a custom PC for).</p>
-                <p>I enjoy learning about pharmacology, psychology, philosophy, and of course - coding.</p>
-                <p>Apparently I'm what is referred to as a "serial hobbyist".</p>
+                <p>Outside of coding, I’m a lifelong reader — currently 150 books into my 200-book goal for the year.
+I also love painting, knitting, crocheting, building miniatures, gaming, and occasionally picking up my clarinet. I even built my own custom PC, which was its own little adventure.</p>
+                
+                <p>I’m endlessly curious, with interests that jump between pharmacology, psychology, philosophy, and — unsurprisingly — more coding.</p>
+                <p>At this point, I've accepted that I'm a proud <em>serial hobbyist</em>.</p>
             </section> 
             </div>
 

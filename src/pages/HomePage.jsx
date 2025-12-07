@@ -10,9 +10,9 @@ function HomePage() {
             <h1>Emma.</h1> 
           </div>
           <div className="home-text">
-            <h2>Aspiring Developer</h2>
-            <p>Currently studying programming in the She Codes Plus program</p>
-            <p>When I'm not crying over broken code I enjoy spending time with my dog, reading, and building mechanical keyboards</p>
+            <h2>Full Stack Developer</h2>
+            <p>I turn ideas into working web apps using Django REST Framework and React.</p>
+            <p>Powered by matcha lattes, curiosity, and the unconditional support of my dog, Hugo.</p>
           </div>
         </div>
       </div>
