@@ -19,9 +19,9 @@ function ContactCard({ isOpen, onClose }) {
                     <h3>Let's Connect</h3>
                 </div>
                 <div className="contact-options">
-                    <a href="mailto:your.email@example.com" target='_blank' className="contact-option">
+                    <a href="mailto:hello@emmmaspear.dev" target='_blank' className="contact-option">
                         <i className="far fa-envelope"></i>
-                        <span>emmspear@gmail.com</span>
+                        <span>hello@emmmaspear.dev</span>
                     </a>
                     <a href="https://www.linkedin.com/in/emma-spear-3b9378315/" target='_blank' className="contact-option">
                         <i className="fab fa-linkedin"></i>
