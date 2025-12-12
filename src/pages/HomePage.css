@@ -1,3 +1,46 @@
+
+.home-skills {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  border: px dashed black;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+
+.home-skills-label {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #555;
+  margin-bottom: 0.75rem;
+  padding-bottom: 1rem;
+}
+
+.home-skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.skill-pill {
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--pink-300);
+  background: var(--pink-100);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ec0f76;
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.skill-pill:hover {
+  transform: translateY(-1px);
+  background-color: var(--pink-500);
+  color: #fff;
+}
 .home-container {
   width: 100%;
   max-width: 1200px;
@@ -18,7 +61,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  min-height: 70vh;
+  min-height: 55vh;
+  border: px dashed black;
 }
 
 .home-title {
@@ -29,6 +73,7 @@
   width: 100%;
   max-width: 1000px;
   gap: 10rem;
+  border: px dashed black;
 }
 
 .title-section h1:nth-child(1) {
@@ -77,10 +122,11 @@
   flex-shrink: 0;
   opacity: 0;
   animation: fadeIn 1s ease-in 4.2s forwards;
+  border: px dashed black;
 }
 
 .home-text h2 {
-  color: #000000;
+  color: #2c2e30;
   margin-bottom: 1.5rem;
   font-size: 2.2rem;
   font-family: 'Work Sans', sans-serif;
@@ -144,15 +190,31 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .home-container {
+    padding: 1.5rem 1rem 0;
+  }
+  .hero-container {
+    padding: 2rem 0 1.5rem;
+    min-height: 60vh;
+  }
+  .home-title {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .title-section {
+    width: 100%;
+    min-width: auto;
+  }
+  .home-text {
+    width: 100%;
+  }
   .currently-working-container {
     padding: 2rem 1rem;
     margin: 0 1rem 2rem 1rem;
   }
-  
   .currently-working-container h2 {
     font-size: 2rem;
   }
-  
   .current-projects {
     grid-template-columns: 1fr;
   }
