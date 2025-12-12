@@ -45,6 +45,7 @@
     gap: 3rem;
     padding: 0 20px;
     margin: 0 auto;  /* Add this to help with centering */
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .nav-links a {

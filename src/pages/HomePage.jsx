@@ -16,6 +16,18 @@ function HomePage() {
           </div>
         </div>
       </div>
+
+      <section className="home-skills">
+        <p className="home-skills-label">Tech I work with</p>
+        <div className="home-skills-pills">
+          <span className="skill-pill"><span>React</span></span>
+          <span className="skill-pill"><span>Django REST</span></span>
+          <span className="skill-pill"><span>Python</span></span>
+          <span className="skill-pill"><span>JavaScript</span></span>
+          <span className="skill-pill"><span>WebSockets</span></span>
+          <span className="skill-pill"><span>PostgreSQL</span></span>
+        </div>
+      </section>
     </div>
   );
 }
