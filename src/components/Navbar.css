@@ -2,7 +2,7 @@
     width: 1200px;
     max-width: calc(100% - 2rem);
     padding: 0.8rem 2rem;
-    background-color: #fce9f3;
+    background-color: var(--pink-100);
     border: 3px solid black; 
     box-shadow: 4px 5px 0px black;
     border-radius: 8px;  

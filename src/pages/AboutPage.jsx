@@ -1,89 +1,89 @@
-import './AboutPage.css';
+import "./AboutPage.css";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import ContactCard from "@/components/ContactCard";
 
 function AboutPage() {
-    return (
-        <div className="about-container">
-            {/* Main Bio Section */}
-            <section className="about-hero">
-                <h1>About Me</h1>
-                <svg width="200" height="200" viewBox="0 0 300 200" className="star-svg">
-                    <path 
-                        fill="var(--main)" 
-                        className="stroke-5 dark:stroke-3.5 stroke-black dark:stroke-black/70" 
-                        d="M195 100c-87.305 4.275-90.725 7.695-95 95-4.275-87.305-7.695-90.725-95-95 87.305-4.275 90.725-7.695 95-95 4.275 87.305 7.695 90.725 95 95"
-                    />
-                </svg>
-                <svg width="200" height="200" viewBox="0 0 300 200" className="star-svg-right">
-                    <path 
-                        fill="var(--main)" 
-                        className="stroke-5 dark:stroke-3.5 stroke-black dark:stroke-black/70" 
-                        d="M195 100c-87.305 4.275-90.725 7.695-95 95-4.275-87.305-7.695-90.725-95-95 87.305-4.275 90.725-7.695 95-95 4.275 87.305 7.695 90.725 95 95"
-                    />
-                </svg>
-                
-            </section>
 
-            <div className='about-content-container'>
-               
-            {/* Background/Journey Section */}
-            <section className="about-journey">
-                <h2>My Journey</h2>
-                <p> I have spent more than a decade working in pharmacy as a dispensary manager, responsible for keeping a fast-paced, highly regulated environment running smoothly.</p>
-                <p> Those years taught me how to stay calm under pressure, navigate complex systems, and pay attention to the details that genuinely matter.</p>
-                <p> I’d always been curious about programming, and when a coworker introduced me to She Codes, I finally decided to make the jump. It turned out to be one of the best decisions I’ve ever made.
-</p>
-                <p>Through She Codes Plus, I’ve stepped into full stack development — building real applications with Python, Django REST Framework, React,
-                     HTML, and CSS. I love the combination of logic, creativity, and problem-solving that tech gives me. Connecting backend and frontend systems 
-                     feels especially rewarding; understanding both sides helps me write cleaner, more efficient, more thoughtful code.</p>
+  const [isContactOpen, setIsContactOpen] = useState(false);
+  return (
+    <div className="about-container">
+      <div className="about-content-wrapper">
+        
+        {/* Main content area with two-column layout */}
+        <div className="about-main-content">
+          {/* Left Column - About */}
+          <div className="about">
+            <div className="about-content">
+              <h3 className="about-content-title">What I Do</h3>
+              <p>
+                I build full stack applications with Python, Django, and React.
+                My current project is a collaborative retrospective board with
+                real-time interaction—the kind of tool where backend and
+                frontend need to work seamlessly together.
+              </p>
 
-                <p>As I continue growing, I’m excited to move into a software development role where I can bring everything I’ve learned from both worlds: precision, adaptability, systems thinking, and a genuine passion for creating tools that make life a little easier for the people using them.</p>
-            </section>
+              <h3 className="about-content-title">Background</h3>
+              <p>
+                Before coding, I spent 10+ years managing pharmacy dispensaries,
+                where accuracy, systems thinking, and calm problem-solving were
+                essential. That background gives me a unique edge: I understand
+                regulated environments, complex workflows, and how to build
+                tools that reduce friction.
+              </p>
 
-            {/* Skills Section */}
-            <section className="skills-section">
-                <h2>Skills & Technologies</h2>
-                <div className="skills-grid">
-                    <div className="skill-category">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
-                        </ul>
-                    </div>
-                    <div className="skill-category">
-                        <h3>Backend</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Django REST Framework</li>
-                            
-                        </ul>
-                    </div>
-                    <div className="skill-category">
-                        <h3>Currently Learning</h3>
-                        <ul>
-                            <li>TypeScript</li>
-                            <li>Node.js</li>
-                            <li>Next.js</li>
-                            <li>PostgreSQL</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            {/* Interests/Hobbies Section */}
-            <section className="interests-section">
-                <h2>Beyond Coding</h2>
-                <p>Outside of coding, I’m a lifelong reader — currently 150 books into my 200-book goal for the year.
-I also love painting, knitting, crocheting, building miniatures, gaming, and occasionally picking up my clarinet. I even built my own custom PC, which was its own little adventure.</p>
-                
-                <p>I’m endlessly curious, with interests that jump between pharmacology, psychology, philosophy, and — unsurprisingly — more coding.</p>
-                <p>At this point, I've accepted that I'm a proud <em>serial hobbyist</em>.</p>
-            </section> 
+             
             </div>
 
+            
+
+            
+          </div>
+          
+
+          <div className="skills-column">
+            <div className="skills-card">
+              <h3 className="section-title">Frontend Development</h3>
+              <ul>
+                <li className="about-pill">React</li>
+                <li className="about-pill">HTML</li>
+                <li className="about-pill">CSS</li>
+                <li className="about-pill">JavaScript</li>
+              </ul>
+            </div>
+
+            <div className="skills-card">
+              <h3 className="section-title">Backend Development</h3>
+              <ul>
+                <li>Python</li>
+                <li>Django DRF</li>
+                <li>Websockets</li>
+              </ul>
+            </div>
+
+            <div className="skills-card">
+              <h3 className="section-title">Development Tools</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Insomnia</li>
+              </ul>
+            </div>
+
+            <div className="skills-card">
+              <h3 className="section-title">Deployment</h3>
+              <ul>
+                <li>Heroku</li>
+                <li>Netlify</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    );
+        
+        
+      </div>
+    </div>
+  );
 }
 
 export default AboutPage;

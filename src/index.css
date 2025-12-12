@@ -41,7 +41,9 @@ body,
 
   /* 📝 Typography */
   /* Make sure these fonts are loaded in index.html or via @import */
-  --font-display: "Syne", sans-serif; /* headings / hero */
+  --font-display: "Plus Jakarta Sans", sans-serif; /* h1 / hero */
+  --font-header: "Plus Jakarta Sans", sans-serif;
+  --font-header-small: "Nunito Sans", sans-serif;
   --font-body: "Poppins", sans-serif; /* body text */
 
   
@@ -75,7 +77,6 @@ h3 {
   font-weight: 600;
   color: var(--text-main);
 }
-
 
 
 
