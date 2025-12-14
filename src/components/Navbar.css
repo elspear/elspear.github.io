@@ -1,211 +1,167 @@
+/* Navbar.css */
 .nav-container {
-    width: 1200px;
-    max-width: calc(100% - 2rem);
-    padding: 0.8rem 2rem;
-    background-color: var(--pink-100);
-    border: 3px solid black; 
-    box-shadow: 4px 5px 0px black;
-    border-radius: 8px;  
-    margin: 1rem auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2.5rem;
+  max-width: 1100px;
+  width: calc(100% - 3rem);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 50px;
+  border: 1px solid rgba(252, 100, 171, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Logo section */
-.nav-logo {
-    flex: 0 1 auto;    /* Changed to prevent stretching */
-    display: flex;
-    border: 0px dashed black;
-    align-items: center;
-    min-height: 45px;    
-    margin-right: 2rem;  /* Add spacing between logo and links */
+.nav-container.nav-hidden {
+  transform: translateX(-50%) translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
 }
 
-.nav-logo img {
-    height: 40px;
-    width: auto;        
-    object-fit: fill;     
-    padding: 0;
+.nav-logo a {
+  text-decoration: none;
 }
 
-/* Links wrapper */
-.links-wrapper {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;  /* Changed from space-between */
-    margin-left: 2rem;
+.logo-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: var(--pink-500);
 }
 
-/* Links section */
 .nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 0 20px;
-    margin: 0 auto;  /* Add this to help with centering */
-    font-family: 'Space Grotesk', sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-button {
+  margin-left: auto;
 }
 
 .nav-links a {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-    
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
 }
 
 .nav-links a:hover {
-    transform: scale(1.1); /* Add this for size increase */
-}
-
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: black;
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-/* Add this after your existing nav-links styles */
-.nav-links a.active::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: black;
-}
-
-.nav-links a.active {
-    font-weight: 500;  /* Optional: makes the active link slightly bolder */
-}
-    
-
-/* Button section */
-.nav-button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  color: var(--pink-500);
 }
 
 .contact-btn {
-    padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    box-sizing: border-box;
-    box-shadow: 3px 5px 0px black;
-    background-color: #fc64ab;
-    cursor: pointer;
-    font-size: 1.2rem;
+  background: var(--pink-500);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .contact-btn:hover {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-    background-color: none;
+  background: var(--pink-700);
+  transform: scale(1.02);
 }
 
-
-
-/* Mobile Menu Button */
+/* Mobile */
 .mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .hamburger {
-    width: 24px;
-    height: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hamburger span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    transition: all 0.3s ease;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--black);
+  transition: all 0.3s ease;
 }
 
 .hamburger.open span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+  transform: translateY(9px) rotate(45deg);
 }
 
 .hamburger.open span:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger.open span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-9px) rotate(-45deg);
 }
 
-/* Responsive design */
+/* Hide mobile menu on desktop */
+.mobile-menu {
+  display: none;
+}
+
 @media (max-width: 768px) {
-    .nav-container {
-        padding: 0.8rem 1rem;
-    }
+  .nav-container {
+    padding: 0.6rem 1rem;
+  }
 
-    .mobile-menu-btn {
-        display: block;
-        z-index: 100;
-    }
+  .nav-links,
+  .nav-button {
+    display: none;
+  }
 
-    .links-wrapper {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: 100%;
-        background-color: #fce9f3;
-        flex-direction: column;
-        justify-content: center;
-        transition: right 0.3s ease;
-        z-index: 90;
-    }
+  .mobile-menu-btn {
+    display: block;
+  }
 
-    .links-wrapper.open {
-        right: 0;
-    }
+  .mobile-menu {
+    display: none;
+  }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
+  .mobile-menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+  }
 
-    .nav-links a {
-        font-size: 1.5rem;
-    }
+  .mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-    .nav-button {
-        justify-content: center;
-    }
-}
-
-/* Tablet adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .nav-container {
-        padding: 0.8rem 1.5rem;
-    }
-
-    .nav-links {
-        gap: 2rem;
-    }
+  .mobile-menu a:hover {
+    color: var(--pink-500);
+  }
 }

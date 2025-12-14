@@ -1,40 +1,51 @@
 import './ProjectCard.css';
 
-function ProjectCard({ title, description, image, video, technologies, github, demo }) {
+function ProjectCard({ title, description, technologies, highlights, features, github, githubFrontend, githubBackend, demo }) {
     return (
-        <article className="project-card">
-            <div className="project-image">
-                {video ? (
-                    <video 
-                        src={video} 
-                        alt={`${title} Demo`}
-                        autoPlay 
-                        loop 
-                        muted
-                        playsInline
-                    />
-                ) : (
-                    <img src={image} alt={`${title} Screenshot`} />
+        <div className="card">
+            <div className="accent"></div>
+            <div className="card-body">
+                <h3 className="card-title">{title}</h3>
+                <p className="card-desc">{description}</p>
+                
+                {highlights && highlights.length > 0 && (
+                    <div className="highlights">
+                        {highlights.map((highlight, index) => (
+                            <span key={index} className="highlight">{highlight}</span>
+                        ))}
+                    </div>
                 )}
-            </div>
-            <div className="project-content">
-                <h2>{title}</h2>
-                <p className="project-tags">
+                
+                {features && features.length > 0 && (
+                    <div className="features">
+                        {features.map((feature, index) => (
+                            <div key={index} className="feature">{feature}</div>
+                        ))}
+                    </div>
+                )}
+                
+                <div className="tech-tags">
                     {technologies.map((tech, index) => (
-                        <span key={index} className="tag">{tech}</span>
+                        <span key={index} className="tech-tag">{tech}</span>
                     ))}
-                </p>
-                <p className="project-description">
-                    {description}
-                </p>
-                <div className="project-links">
+                </div>
+                
+                <div className="card-links">
                     {demo && (
-                        <a href={demo} target="_blank" rel="noopener noreferrer" className="button">View Project</a>
+                        <a href={demo} target="_blank" rel="noopener noreferrer" className="card-link">View Project →</a>
                     )}
-                    <a href={github} target="_blank" rel="noopener noreferrer" className="button button-outline">View Code</a>
+                    {github && (
+                        <a href={github} target="_blank" rel="noopener noreferrer" className="card-link">View Code →</a>
+                    )}
+                    {githubFrontend && (
+                        <a href={githubFrontend} target="_blank" rel="noopener noreferrer" className="card-link">Frontend →</a>
+                    )}
+                    {githubBackend && (
+                        <a href={githubBackend} target="_blank" rel="noopener noreferrer" className="card-link">Backend →</a>
+                    )}
                 </div>
             </div>
-        </article>
+        </div>
     );
 }
 
