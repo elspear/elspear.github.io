@@ -123,7 +123,7 @@ function HomePage() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/emma-spear/"
+            href="https://www.linkedin.com/in/emma-spear-dev/"
             className="social-link"
             target="_blank"
             rel="noopener noreferrer"
