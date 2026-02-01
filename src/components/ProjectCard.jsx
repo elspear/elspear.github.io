@@ -3,7 +3,6 @@ import './ProjectCard.css';
 function ProjectCard({ title, description, technologies, highlights, features, github, githubFrontend, githubBackend, demo }) {
     return (
         <div className="card">
-            <div className="accent"></div>
             <div className="card-body">
                 <h3 className="card-title">{title}</h3>
                 <p className="card-desc">{description}</p>

@@ -6,7 +6,7 @@
   display: flex;
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(252, 100, 171, 0.15);
-  height: 420px;
+  height: 480px;
   width: auto;
   min-width: 400px;
   max-width: 600px;
@@ -17,12 +17,6 @@
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(252, 100, 171, 0.18);
   border-color: var(--pink-300);
-}
-
-.accent {
-  width: 5px;
-  background: linear-gradient(180deg, var(--pink-500), var(--pink-100));
-  flex-shrink: 0;
 }
 
 .card-body {
@@ -116,4 +110,94 @@
 
 .card-link:hover {
   color: var(--pink-700);
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+    min-height: 400px;
+    min-width: unset;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
+  .card-desc {
+    font-size: 0.85rem;
+  }
+
+  .highlight {
+    font-size: 0.65rem;
+  }
+
+  .feature {
+    font-size: 0.78rem;
+  }
+
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .card-links {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .card-link {
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    min-height: 380px;
+    border-radius: 12px;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-desc {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .highlights {
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .features {
+    margin-bottom: 0.75rem;
+  }
+
+  .feature {
+    font-size: 0.75rem;
+    padding: 0.1rem 0;
+  }
+
+  .tech-tags {
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+  }
 }

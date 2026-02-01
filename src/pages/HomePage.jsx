@@ -69,16 +69,16 @@ function HomePage() {
       demo: "https://python-weather-project-emma.streamlit.app/"
     },
     {
-      title: "Wyrdl",
-      description: "A terminal-based Wordle clone built with Python and Rich, featuring colorful feedback and word validation against a 10,000-word dictionary.",
-      technologies: ["Python", "Rich"],
-      highlights: ["Rich Terminal UI", "Dictionary Validation", "Adaptive Spacing"],
+      title: "Pharmdle",
+      description: "A daily pharmacy word guessing game inspired by Wordle, where players identify drug names using pharmacological class and indication hints.",
+      technologies: ["React", "Next.js", "Supabase", "Tailwind CSS", "Python", "Pandas", "Vercel"],
+      highlights: ["Next.js", "Supabase", "ATC Classification"],
       features: [
-        "Classic Wordle color feedback (green/yellow/gray)",
-        "6 attempts to guess the 5-letter word",
-        "Clean panel display with game state tracking"
+        "Daily puzzle selects a random drug name for all players to guess, with hints based on the WHO ATC classification hierarchy",
+        "Tracks player statistics including win streaks, guess distribution, and games played using local storage",
+        "Drug database built by processing PBS data with Python, mapping drugs to therapeutic classes and indications via ATC codes"
       ],
-      github: "https://github.com/elspear/wyrdle",
+      demo: "https://pharmdle.vercel.app/",
     },
   ];
 
